@@ -1,44 +1,137 @@
-# Number Guessing Game - CLI
+Project Task URL : https://roadmap.sh/projects/task-tracker
 
-Project Task URL : https://roadmap.sh/projects/number-guessing-game
 
-## 🚀 Features
 
-- **Three Difficulty Levels**:
-  - **Easy**: 10 chances.
-  - **Medium**: 5 chances.
-  - **Hard**: 3 chances.
-- **Input Validation**: Robust handling for non-numeric inputs to prevent application crashes.
-- **Interactive Feedback**: Real-time hints like "Too High!" or "Too Low!" to guide the player.
-- **Play Again System**: Seamlessly restart a new game without exiting the application.
-- **Terminal Styling**: Custom console styling for better user experience (Info, Selection, and Error themes).
+🖥 CLI Task Manager
 
-## 🛠️ Tech Stack
 
-- **Language**: C#
-- **Framework**: .NET 10.0
-- **IDE**: Visual Studio 2022
 
-## 🎮 Getting Started
+A Command Line Interface (CLI)–based Task Management application built with C#.
 
-1. Ensure you have the [.NET SDK](https://dotnet.microsoft.com/download) installed.
-2. Clone this repository:
-   ```bash
-   git clone [https://github.com/your-username/number-guessing-game-aditya.git](https://github.com/your-username/number-guessing-game-aditya.git)
-3. Navigate to the project directory: cd number-guessing-game-aditya
-4. Run the application: dotnet run
+This application allows users to manage tasks efficiently through structured terminal commands.
 
-## 📝 Sample Output
 
-Welcome to the Number Guessing Game!
-I will give you a number from 1 - 100
 
-Available levels:
-1. Easy (10 chances)
-2. Medium (5 chances)
-3. Hard (3 chances)
+📌 Overview
 
-Select levels : 2
-You have selected Medium level, you have 5 chances
-Enter your guess : 50
-Too high! Try again.
+
+
+CLI Task Manager is a console application designed to handle task management operations directly from the terminal.
+
+It implements structured logic, status tracking, and filtered task views to provide a clear and organized workflow.
+
+The project emphasizes clean code organization and separation of concerns.
+
+
+
+🚀 Features
+
+
+
+- Add new tasks
+
+- Update existing tasks
+
+- Delete tasks
+
+- Mark tasks as:
+
+  - Not Done
+
+  - In Progress
+
+  - Done
+
+- List all tasks
+
+- List completed tasks
+
+- List unfinished tasks
+
+- List tasks in progress
+
+
+
+🏗 Project Structure
+
+CLI_Project/
+
+│
+
+├── Models/
+
+│   └── data.cs
+
+│
+
+├── Services/
+
+│   ├── Service.cs
+
+│   └── FileService.cs
+
+│
+
+├── Utilities/
+
+│   └── Utility.cs
+
+│
+
+├── Program.cs
+
+└── CLI_Project.csproj
+
+
+
+Structure Explanation
+
+- Models → Defines the task data structure
+
+- Services → Contains business logic and file handling
+
+- Utilities → Helper methods
+
+- Program.cs → Application entry point and CLI interaction
+
+
+
+🛠 Technologies Used
+
+
+
+- C#
+
+- .NET Console Application
+
+- File-based data storage
+
+- Git for version control
+
+
+
+📦 How to Run
+
+1. Clone the repository:  git clone https://github.com/adityaputras021/Simple-Crud-Console-Program-V2---Aditya
+
+2. Navigate to the project directory:  cd CLI_Project
+
+3. Run the application:  dotnet run
+
+
+
+🎯 Purpose
+
+
+
+This project was built to strengthen understanding of:
+
+-  CLI application development
+
+-  CRUD operations
+
+-  State-based task management
+
+-  Code modularization and separation of concerns
+
+-  Git workflow fundamentals
