@@ -1,137 +1,60 @@
-Project Task URL : https://roadmap.sh/projects/task-tracker
+# 🖥️ CLI Task Manager
 
+A robust Command Line Interface (CLI) application for efficient task management, built with **C#**. This project is an implementation of the [Task Tracker](https://roadmap.sh/projects/task-tracker) challenge from **roadmap.sh**.
 
+## 📌 Overview
 
-🖥 CLI Task Manager
+CLI Task Manager is designed to handle task operations directly from the terminal. It emphasizes clean code architecture, separation of concerns, and state-based task tracking to provide an organized workflow for developers and power users.
 
+## 🚀 Features
 
+- **Task Management**: Add, Update, and Delete tasks seamlessly.
+- **Status Tracking**: Mark tasks as:
+  - `todo` (Not Done)
+  - `in-progress`
+  - `done`
+- **Smart Filtering**:
+  - List all tasks.
+  - List only completed tasks.
+  - List pending or in-progress tasks.
+- **Persistent Storage**: All tasks are saved locally to ensure data persistence between sessions.
 
-A Command Line Interface (CLI)–based Task Management application built with C#.
-
-This application allows users to manage tasks efficiently through structured terminal commands.
-
-
-
-📌 Overview
-
-
-
-CLI Task Manager is a console application designed to handle task management operations directly from the terminal.
-
-It implements structured logic, status tracking, and filtered task views to provide a clear and organized workflow.
-
-The project emphasizes clean code organization and separation of concerns.
-
-
-
-🚀 Features
-
-
-
-- Add new tasks
-
-- Update existing tasks
-
-- Delete tasks
-
-- Mark tasks as:
-
-  - Not Done
-
-  - In Progress
-
-  - Done
-
-- List all tasks
-
-- List completed tasks
-
-- List unfinished tasks
-
-- List tasks in progress
-
-
-
-🏗 Project Structure
+## 🏗️ Project Structure
 
 CLI_Project/
-
 │
-
 ├── Models/
-
-│   └── data.cs
-
-│
-
+│   └── data.cs          # Defines the Task data structure
 ├── Services/
-
-│   ├── Service.cs
-
-│   └── FileService.cs
-
-│
-
+│   ├── Service.cs       # Core business logic
+│   └── FileService.cs   # JSON/File handling for persistence
 ├── Utilities/
-
-│   └── Utility.cs
-
-│
-
-├── Program.cs
-
+│   └── Utility.cs       # Helper methods and formatting
+├── Program.cs           # Entry point and CLI command parsing
 └── CLI_Project.csproj
 
+🛠️ Technologies Used
+Language: C#
+
+- Framework: .NET Console Application
+
+- Storage: File-based (JSON/Plain Text)
+
+- Version Control: Git
+
+## 📦 How to Run
+
+1. Clone the repository: git clone [https://github.com/adityaputras021/Simple-Crud-Console-Program-V2---Aditya](https://github.com/adityaputras021/Simple-Crud-Console-Program-V2---Aditya)
+2. Navigate to the directory: cd CLI_Project
+3. Run the application: dotnet run
 
 
-Structure Explanation
+## 🎯 Learning Objectives
+This project was developed to master:
 
-- Models → Defines the task data structure
+- CLI Design: Handling arguments and user inputs via terminal.
+- CRUD Operations: Create, Read, Update, and Delete logic.
+- Modularization: Applying clean architecture and separation of concerns.
+- State Management: Managing task transitions and filtered views.
 
-- Services → Contains business logic and file handling
-
-- Utilities → Helper methods
-
-- Program.cs → Application entry point and CLI interaction
-
-
-
-🛠 Technologies Used
-
-
-
-- C#
-
-- .NET Console Application
-
-- File-based data storage
-
-- Git for version control
-
-
-
-📦 How to Run
-
-1. Clone the repository:  git clone https://github.com/adityaputras021/Simple-Crud-Console-Program-V2---Aditya
-
-2. Navigate to the project directory:  cd CLI_Project
-
-3. Run the application:  dotnet run
-
-
-
-🎯 Purpose
-
-
-
-This project was built to strengthen understanding of:
-
--  CLI application development
-
--  CRUD operations
-
--  State-based task management
-
--  Code modularization and separation of concerns
-
--  Git workflow fundamentals
+Developed by Aditya | Task Tracker Challenge
